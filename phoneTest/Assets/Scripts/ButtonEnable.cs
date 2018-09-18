@@ -16,15 +16,17 @@ public class ButtonEnable : MonoBehaviour {
 	}
 
 	public void Hide() {
-	 canvasGroup = GetComponent<CanvasGroup>();
-     canvasGroup.alpha = 0.3f; //this makes everything transparent
+		
+		canvasGroup = GetComponent<CanvasGroup>();
+     		canvasGroup.alpha = 0.3f; //this makes everything transparent
     // canvasGroup.blocksRaycasts = false; //this prevents the UI element to receive input events
  	}
 
 	public void Show() {
-	 canvasGroup = GetComponent<CanvasGroup>();
-     canvasGroup.alpha = 1f;
-     canvasGroup.blocksRaycasts = true;
+		
+		canvasGroup = GetComponent<CanvasGroup>();
+     		canvasGroup.alpha = 1f;
+     		canvasGroup.blocksRaycasts = true;
  	}
 
 }
